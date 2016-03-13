@@ -1,0 +1,494 @@
+extends ./template/template.jade
+
+block title
+	title Главная страница
+
+block content
+	// BEGIN HEADER 
+	.header
+		.container
+			// BEGIN TOP-LINE 
+			.top-line
+				.top-line__col
+					.hamburger
+						span.hamburger__line
+						span.hamburger__line
+						span.hamburger__line
+				.top-line__col
+					.logo
+						a(href="/").logo__link
+							i.icon.icon_logo
+					p.logo-description ландшафтный дизайн в Москве и Московской области
+					nav.nav-bar
+						a(href="#").nav-bar__link УСЛУГИ
+						a(href="#").nav-bar__link ГАЛЕРЕЯ
+						a(href="#").nav-bar__link КОНТАКТЫ
+				.top-line__col
+					.call
+						a(href="tel:+74951234534").call__link +7 (495) 123-45-34
+						p.call__work Время работы: пн — вс, с 9:00 до 19:00
+						a(href="#").button.button_no_bg.call__button Заказать звонок
+			// END TOP-LINE 
+			// BEGIN TITLE
+			.title
+				h1.title__text Ландшафтный дизайн
+				p.title__subtitle «под ключ»
+			// END TITLE
+			// BEGIN ADVANTAGES
+			.advantages
+				.advantages__item
+					i.icon.icon_forest3
+					p.advantages__text в 3-х ценовых вариантах
+				.advantages__item
+					i.icon.icon_sotka
+					p.advantages__text от 60 000 рублей за сотку 
+				.advantages__item.advantages__item_video
+					i.icon.icon_video
+					p.advantages__text с системой видеонаблюдения
+			// END ADVANTAGES
+			p.description Такого еще не было, но мы решили это сделать для вас 
+			.header__button
+				a(href="#").button.button_blue Заказать консультацию
+
+	// END HEADER 
+
+	// BEGIN THREE-SETS
+	.three-sets
+		.container
+			h2.three-sets__title Три наших подхода к<br> ландшафтному дизайну
+			.sets__dot
+			.sets
+				// BEGIN SETS-ITEM 
+				.sets-item
+					.sets-item__preveiw
+						img(src="img/photo.png", alt="").sets-item__image
+					.sets-item__description
+						h3.sets-item__title Роскошь
+						p.sets-item__subtitle Индивидуальный проект и дизайн
+						p.sets-item__text Изучаем условия участка
+						p.sets-item__text Выбираем  концепцию и материалы, определяемся с технологическими решениями. 
+						p.sets-item__text Проектируем индивидуальный дизайн
+						p.sets-item__text Создаем произведение искусства на вашем участке
+						p.sets-item__price от 
+							span.sets-item__price-number 170000
+							|  рублей за сотку
+						a(href="javascript:;").button.button_blue.sets-item__button#luxury-btn РАССЧИТАТЬ РОСКОШЬ
+							i.icon.icon_w-right.sets-item__button-icon
+				// END SETS-ITEM 
+
+				// BEGIN SETS-ITEM 
+				.sets-item
+					.sets-item__preveiw
+						img(src="img/photo.png", alt="").sets-item__image
+					.sets-item__description
+						h3.sets-item__title АРХИТЕКТУРА
+						p.sets-item__subtitle Готовое премиальное решение
+						p.sets-item__text создаем пространство для  вашей комфортной жизни
+						p.sets-item__text готовы все рабочие чертежи и ассортиментные ведомости для любой площади
+						p.sets-item__text реализуем выбранный вариант с учетом  особенностей вашего участка.
+						p.sets-item__text вы  получаете готовый дизайн участка  за приемлемую стоимость и адекватные сроки. 
+						p.sets-item__text можно добавить любые опцию из раздела услуги.
+						p.sets-item__price от 
+							span.sets-item__price-number 110000
+							|  рублей за сотку
+						a(href="javascript:;").button.button_blue.sets-item__button#architecture-btn РАССЧИТАТЬ АРХИТЕКТУРА 
+							i.icon.icon_w-right.sets-item__button-icon
+				// END SETS-ITEM 
+
+				// BEGIN SETS-ITEM 
+				.sets-item
+					.sets-item__preveiw
+						img(src="img/photo.png", alt="").sets-item__image
+					.sets-item__description
+						h3.sets-item__title МИНИМАЛИЗМ
+						p.sets-item__subtitle Готовое недорогое решение
+						p.sets-item__text дизайн довольно сдержанный
+						p.sets-item__text создаем пространство для  ваших идей 
+						p.sets-item__text готовы все рабочие чертежи и ассортиментные ведомости для любой площади 
+						p.sets-item__text реализуем выбранный вариант с учетом особенностей вашего участка. 
+						p.sets-item__text вы  получаете качественный ландшафтный дизайн за приемлемую стоимость и адекватные сроки. 
+						p.sets-item__text можно добавить любые опцию из раздела  услуги.
+						p.sets-item__price от 
+							span.sets-item__price-number 60000
+							|  рублей за сотку
+						a(href="javascript:;").button.button_blue.sets-item__button#minimal-btn РАССЧИТАТЬ МИНИМАЛИЗМ
+							i.icon.icon_w-right.sets-item__button-icon
+				// END SETS-ITEM 
+	// END THREE-SETS
+
+	// BEGIN PRICE-MINIMAL
+	.price.price-minimal
+		.container
+			h2.price__title НАБОР УСЛУГ И СТОИМОСТЬ
+			h3.price__subtitle Минимализм
+			form(action="/")
+				.sides
+					.price__side.price__side_left
+						img(src="img/preview.jpg", alt="").price__preview
+						p.price__all-project
+							a(href="#").price__all-project-link
+								i.icon.icon_b-left.price__all-project-icon
+								| Посмотреть полный проект
+						.price-form
+							.price-form__control.price-form__control_input
+								input(type="text" placeholder="РАЗМЕР УЧАСТКА").input.price-form__input
+							.price-form__control.price-form__control_input
+								input(type="text" placeholder="ВВЕДИТЕ АДРЕС").input.price-form__input
+							.price-form__control.price-form__control_button
+								button(type="submit").button-big.button_blue РАССЧИТАТЬ 
+									i.icon.icon_w-right.button-big__icon
+							.price-form__control
+								.price__number 456 000
+									.rubl Р
+						p.button-container
+							a(href="#").button.button_pink.price__button УЗНАТЬ ПОДРОБНЕЕ
+					.price__side.price__side_right
+						h4.price__list-title БАЗОВЫЙ  ПАКЕТ
+						ul.price-list
+							li.price-list__item
+								i.icon.icon_priming.price-list__icon
+								span.price-list__text Грунт плодородный  6,5 см
+							li.price-list__item
+								i.icon.icon_plan.price-list__icon
+								span.price-list__text Планировка территории
+							li.price-list__item
+								i.icon.icon_flowers.price-list__icon
+								span.price-list__text Цветники из многолетников
+							li.price-list__item
+								i.icon.icon_forest.price-list__icon
+								span.price-list__text Растения хвойные и лиственные
+							li.price-list__item
+								i.icon.icon_work.price-list__icon
+								span.price-list__text Выполнение работ
+							li.price-list__item
+								i.icon.icon_track.price-list__icon
+								span.price-list__text Дорожки из гравийного отсева
+							li.price-list__item
+								i.icon.icon_lawn.price-list__icon
+								span.price-list__text Газон сеянный 100% мятлик
+						h4.price__list-title ВЫБЕРИТЕ ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ
+						ul.check-list
+							li.check-list__item
+								input(type="checkbox")#lawn.check-list__input
+								label(for="lawn").check-list__text Газон рулонный 100% мятлик
+							li.check-list__item
+								input(type="checkbox")#flowers.check-list__input
+								label(for="flowers").check-list__text Цветники
+							li.check-list__item
+								input(type="checkbox")#forest.check-list__input
+								label(for="forest").check-list__text Деревья
+							li.check-list__item
+								input(type="checkbox")#forest2.check-list__input
+								label(for="forest2").check-list__text Деревья
+							li.check-list__item
+								input(type="checkbox")#track.check-list__input
+								label(for="track").check-list__text Дорожки из брусчатки
+							li.check-list__item
+								input(type="checkbox")#watering.check-list__input
+								label(for="watering").check-list__text Автоматический полив
+							li.check-list__item
+								input(type="checkbox")#drainage.check-list__input
+								label(for="drainage").check-list__text Дренаж участка
+	// END PRICE-MINIMAL
+
+	// BEGIN PRICE-ARCHITECTURE
+	.price.price-architecture
+		.container
+			h2.price__title НАБОР УСЛУГ И СТОИМОСТЬ
+			h3.price__subtitle Архитектура
+			form(action="/")
+				.sides
+					.price__side.price__side_left
+						img(src="img/preview.jpg", alt="").price__preview
+						p.price__all-project
+							a(href="#").price__all-project-link
+								i.icon.icon_b-left.price__all-project-icon
+								| Посмотреть полный проект
+						.price-form
+							.price-form__control.price-form__control_input
+								input(type="text" placeholder="РАЗМЕР УЧАСТКА").input.price-form__input
+							.price-form__control.price-form__control_input
+								input(type="text" placeholder="ВВЕДИТЕ АДРЕС").input.price-form__input
+							.price-form__control.price-form__control_button
+								button(type="submit").button-big.button_blue РАССЧИТАТЬ 
+									i.icon.icon_w-right.button-big__icon
+							.price-form__control
+								.price__number 456 000
+									.rubl Р
+						p.button-container
+							a(href="#").button.button_pink.price__button УЗНАТЬ ПОДРОБНЕЕ
+					.price__side.price__side_right
+						h4.price__list-title БАЗОВЫЙ  ПАКЕТ
+						ul.price-list
+							li.price-list__item
+								i.icon.icon_priming.price-list__icon
+								span.price-list__text Грунт плодородный  6,5 см
+							li.price-list__item
+								i.icon.icon_plan.price-list__icon
+								span.price-list__text Планировка территории
+							li.price-list__item
+								i.icon.icon_flowers.price-list__icon
+								span.price-list__text Цветники из многолетников
+							li.price-list__item
+								i.icon.icon_forest.price-list__icon
+								span.price-list__text Растения хвойные и лиственные
+							li.price-list__item
+								i.icon.icon_work.price-list__icon
+								span.price-list__text Выполнение работ
+							li.price-list__item
+								i.icon.icon_track.price-list__icon
+								span.price-list__text Дорожки из гравийного отсева
+							li.price-list__item
+								i.icon.icon_lawn.price-list__icon
+								span.price-list__text Газон сеянный 100% мятлик
+						h4.price__list-title ВЫБЕРИТЕ ДОПОЛНИТЕЛЬНЫЕ ОПЦИИ
+						ul.check-list
+							li.check-list__item
+								input(type="checkbox")#lawn.check-list__input
+								label(for="lawn").check-list__text Газон рулонный 100% мятлик
+							li.check-list__item
+								input(type="checkbox")#flowers.check-list__input
+								label(for="flowers").check-list__text Цветники
+							li.check-list__item
+								input(type="checkbox")#forest.check-list__input
+								label(for="forest").check-list__text Деревья
+							li.check-list__item
+								input(type="checkbox")#forest2.check-list__input
+								label(for="forest2").check-list__text Деревья
+							li.check-list__item
+								input(type="checkbox")#track.check-list__input
+								label(for="track").check-list__text Дорожки из брусчатки
+							li.check-list__item
+								input(type="checkbox")#watering.check-list__input
+								label(for="watering").check-list__text Автоматический полив
+							li.check-list__item
+								input(type="checkbox")#drainage.check-list__input
+								label(for="drainage").check-list__text Дренаж участка
+	// END PRICE-ARCHITECTURE
+
+	// BEGIN PRICE-LUXURY
+	.price.price-luxury
+		.container
+			h2.price__title НАБОР УСЛУГ И СТОИМОСТЬ
+			h3.price__subtitle Роскошь
+			form(action="/")
+				.sides
+					.price__side.price__side_left
+						img(src="img/preview.jpg", alt="").price__preview
+						p.price-luxury__form-title Чтобы рассчитать стоимости отправьте заявку
+						.price-luxury-form
+							.price-luxury-form__control
+								input(type="text" placeholder="Ваше имя").input.price-luxury-form__input
+							.price-luxury-form__control
+								input(type="text" placeholder="Ваш телефон").input.price-luxury-form__input.data-inputmask
+							.price-luxury-form__control
+								input(type="text" placeholder="Ваш E-mail").input.price-luxury-form__input
+							.price-luxury-form__control
+								button(type="submit").button-middle.button_blue ОТПРАВИТЬ ЗАЯВКУ
+						p.button-container
+							a(href="#").button.button_pink.price__button УЗНАТЬ ПОДРОБНЕЕ
+					.price__side.price__side_right
+						h4.price-luxury__list-title ИНДИВИДУАЛЬНЫЙ ПРОЕКТ И ДИЗАЙН
+						ul.price-luxury-list
+							li.price-luxury-list__item
+								i.icon.icon_conditions.price-luxury-list__icon
+								span.price-luxury-list__text Изучаем условия участка
+							li.price-luxury-list__item
+								i.icon.icon_material.price-luxury-list__icon
+								span.price-luxury-list__text Выбираем  концепцию и материалы
+							li.price-luxury-list__item
+								i.icon.icon_idea.price-luxury-list__icon.price-luxury-list__icon_double
+								span.price-luxury-list__text Определяемся с технологическими решениями.
+							li.price-luxury-list__item
+								i.icon.icon_project.price-luxury-list__icon
+								span.price-luxury-list__text Проектируем индивидуальный дизайн 
+							li.price-luxury-list__item
+								i.icon.icon_art.price-luxury-list__icon.price-luxury-list__icon_double
+								span.price-luxury-list__text Создаем произведение искусства на вашем участке
+	// END PRICE-LUXURY
+
+
+	// BEGIN DEMOCRACY 
+	.democracy
+		.container
+			h2.democracy__title МЫ ЗА ДЕМОКРАТИЮ
+			p.democracy__description Если вы решили не делать комплексный дизайн, но  есть конкретная задача или <br>несколько, Вы можете выбрать только те услуги которые вам необходимы.
+			.democracy__form
+				form(action="/").form-consult
+					p.form-consult__text Чтобы узнать о данной услуге оставьте заявку на консультацию
+					.form-consult__line
+						input(type="text" placeholder="Ваше имя").form-consult__input
+					.form-consult__line
+						input(type="text" placeholder="Ваш телефон").form-consult__input
+					.form-consult__line
+						input(type="text" placeholder="Ваш E-mail").form-consult__input
+					.form-consult__line
+						button(type="submit").button.button_pink.form-consult__button Отправить заявку
+				.hr
+				.call-consult
+					p.call-consult__text Или позвоните по телефону
+					a(href="tel:84959841696").call-consult__link 8 (495) 984-16-96
+					a(href="#").button.button_no_bg.call-consult__button Заказать звонок
+	// END DEMOCRACY 
+
+	// BEGIN WORKS 
+	.works
+		.works-conten
+			.container
+				h2.works-conten__title ВЫПОЛНЕННЫЕ РАБОТЫ
+				.works-side
+					.works-side__l
+						h3.works-side__title Проекты
+						ul.works-list
+							li.works-list__item Калужская область д. Иваново
+							li.works-list__item Москва ЖК Символ
+							li.works-list__item Москва Староконюшенный
+							li.works-list__item Москва ТЦ Тульский
+							li.works-list__item МО КП Резиденции Беннилюкс
+							li.works-list__item МО КП Миллениум Парк
+							li.works-list__item МО КП Полесье
+							li.works-list__item Ярославская обл. СНТ Лесное
+							li.works-list__item Тульская обл. д. Богучарово
+					.works-side__r
+						h3.works-side__title Реализация
+						ul.works-list
+							li.works-list__item Калужская область д. Иваново
+							li.works-list__item Москва ЖК Символ
+							li.works-list__item Москва Староконюшенный
+							li.works-list__item Москва ТЦ Тульский
+							li.works-list__item МО КП Резиденции Беннилюкс
+							li.works-list__item МО КП Миллениум Парк
+							li.works-list__item МО КП Полесье
+							li.works-list__item Ярославская обл. СНТ Лесное
+							li.works-list__item Тульская обл. д. Богучарово
+		.works-form
+			.container
+				h2.works-form__title СКАЧАЙТЕ НАШ ПРАЙС ЛИСТ
+				form(action="/").works-form__form
+					.works-form__control
+						input(type="text" placeholder="Ваше имя").input.works-form__input
+					.works-form__control
+						input(type="text" placeholder="Ваш телефон").input.works-form__input
+					.works-form__control
+						button(type="submit").button.button_pink.works-form__button Скачать
+				p.works-form__text или получите бесплатную консультацию позвонив по нашему телефону ниже. Наши специалисты работают каждый день с 9.00-21.00 . Мы оперативно подберем для вашего объекта лучший вариант. 8 (495) 984-16-96
+
+
+
+	// END WORKS 
+
+
+	// BEGIN VIDEO-CONTROL 
+	.video-control
+		.container
+			.video-control__bg
+			h2.video-control__title ВИДЕОКОНТРОЛЬ ЗА <br>РАБОТОЙ НА УЧАСТКЕ
+
+			.video-control__content
+				h3.video-control__subtitle Мы за честную и качественную работу. Нам нечего скрывать.
+				p.video-control__text Теперь вы можете узнать и проверить ход работ на участке находясь в любой точке мира. Мы установим несколько камер на участке и вы в любое время можете удаленно посмотреть  процесс работ.  Вам просто нужно зайти на нашем сайте в личный кабинет или скачать  мобильное приложение.  Данная услуга не обязательна и предоставляется по желанию  заказчика.
+	// END VIDEO-CONTROL 
+
+	// BEGIN RECALL 
+	.recall
+		.container
+			h2.recall__title Отзывы
+			.recall__items
+				.recall-item.recall-item_color_green.recall-item_show1
+					.recall-item__author
+						.recall-item__image
+						p.recall-item__name Антон Петров
+					.recall-item__message
+						p.recall-item__text Для срочной перевозки мы наладили взаимодействие с операторами по всему миру.Благодаря этому перелёты осуществляются беспосадочно из любой точки мира в аэропорт
+				.recall-item.recall-item_color_yellow.recall-item_show2
+					.recall-item__author
+						.recall-item__image
+						p.recall-item__name Антон Иванов
+					.recall-item__message
+						p.recall-item__text Для срочной перевозки мы наладили взаимодействие с операторами по всему миру.Благодаря этому перелёты осуществляются беспосадочно из любой точки мира в аэропорт
+				.recall-item.recall-item_color_blue.recall-item_show3
+					.recall-item__author
+						.recall-item__image
+						p.recall-item__name Антон Сидоров
+					.recall-item__message
+						p.recall-item__text Для срочной перевозки мы наладили взаимодействие с операторами по всему миру.Благодаря этому перелёты осуществляются беспосадочно из любой точки мира в аэропорт
+				.recall-item.recall-item_color_orange
+					.recall-item__author
+						.recall-item__image
+						p.recall-item__name Антон Зиров
+					.recall-item__message
+						p.recall-item__text Для срочной перевозки мы наладили взаимодействие с операторами по всему миру.Благодаря этому перелёты осуществляются беспосадочно из любой точки мира в аэропорт
+			p.recall-button-container
+				a(href="javascript:;").button.button_white.recall__button ДАЛЬШЕ
+					i.icon.icon_b-right.recall__button-icon
+	// END RECALL 
+
+	// BEGIN MESSAGE
+	.message
+		.container
+			h2.message__title Благодарственные письма
+			.message__content
+				.nav__prev.nav__prev_message
+					i.icon.icon_prev
+				.slider
+					.slider__item
+						a(href="http://placehold.it/500x800").message__link
+							img(src="img/message.jpg", alt="").slider__img
+					.slider__item
+						a(href="http://placehold.it/500x800").message__link
+							img(src="img/message.jpg", alt="").slider__img
+					.slider__item
+						a(href="http://placehold.it/500x800").message__link
+							img(src="img/message.jpg", alt="").slider__img
+					.slider__item
+						a(href="http://placehold.it/500x800").message__link
+							img(src="img/message.jpg", alt="").slider__img
+					.slider__item
+						a(href="http://placehold.it/500x800").message__link
+							img(src="img/message.jpg", alt="").slider__img
+					.slider__item
+						a(href="http://placehold.it/500x800").message__link
+							img(src="img/message.jpg", alt="").slider__img
+				.nav__next.nav__next_message
+					i.icon.icon_next
+
+	// END MESSAGE
+
+	// BEGIN MAP-WORK
+	.map-work
+		.container
+			h2.map-work__title КАРТА ВЫПОЛНЕННЫХ ОБЪЕКТОВ
+		.map-work__map#mapwork
+	// END MAP-WORK
+
+	// BEGIN CONTACT
+	.contact
+		.container
+			.contact__sides
+				.contact__side.contact__side_l
+					h2.contact__title Контакты
+					.round-map#roundmap
+					p.contact__subtitle Наш офис:
+					p.contact__addr ул. Бауманская, д. 11, оф. 4
+					a(href="tel:+74951234534").contact__phone-link +7 (495) 123-45-34
+					p.button-container
+						a(href="#").button.button_blue.contact__button Заказать звонок
+				.contact__side.contact__side_r
+					.question
+						h2.question__title Остались вопросы?
+						form(action="/").question__form
+							p.question__text Заполните форму котанктов, и наш менеджер свяжится с Вами и ответить на все Ваши воопросы
+							.question__line
+								input(type="text" placeholder="Ваше имя").input.question__input
+							.question__line
+								input(type="text" placeholder="Ваш телефон").input.question__input.data-inputmask
+							.question__line
+								input(type="text" placeholder="Ваш E-mail").input.question__input
+							.question__line
+								input(type="text" placeholder="Ваш вопрос").input.question__input
+							.question__line
+								button(type="submit").button.button_pink.question__button Задать вопрос
+
+	// END CONTACT
+
+
