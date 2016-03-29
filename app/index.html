@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="_main.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")-->
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -21,16 +21,28 @@
         <!-- BEGIN TOP-LINE -->
         <div class="top-line">
           <div class="top-line__col">
-            <div class="hamburger"><span class="hamburger__line"></span><span class="hamburger__line"></span><span class="hamburger__line"></span></div>
+            <div class="hamberger-wrapper">
+              <div class="hamburger"><span class="hamburger__line hamburger__line_1"></span><span class="hamburger__line hamburger__line_2"></span><span class="hamburger__line hamburger__line_3"></span></div>
+            </div>
+          </div>
+          <div class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item"><a href="javascript:;" data-block=".three-sets" class="main-menu__link">Наш подход</a></li>
+              <li class="main-menu__item"><a href="javascript:;" data-block=".price-minimal" class="main-menu__link">Услуги и стоимость</a></li>
+              <li class="main-menu__item"><a href="javascript:;" data-block=".works" class="main-menu__link">Выполеннные работы</a></li>
+              <li class="main-menu__item"><a href="javascript:;" data-block=".recall" class="main-menu__link">Отзывы</a></li>
+              <li class="main-menu__item"><a href="javascript:;" data-block=".map-work" class="main-menu__link">Наши работы на карте</a></li>
+              <li class="main-menu__item"><a href="javascript:;" data-block=".contact" class="main-menu__link">Контакты</a></li>
+            </ul>
           </div>
           <div class="top-line__col">
             <div class="logo"><a href="/" class="logo__link"><i class="icon icon_logo"></i></a></div>
             <p class="logo-description">ландшафтный дизайн в Москве и Московской области</p>
-            <nav class="nav-bar"><a href="#" class="nav-bar__link">УСЛУГИ</a><a href="#" class="nav-bar__link">ГАЛЕРЕЯ</a><a href="#" class="nav-bar__link">КОНТАКТЫ</a></nav>
+            <nav class="nav-bar"><a href="javascript:;" data-block=".price-minimal" class="nav-bar__link">УСЛУГИ</a><a href="javascript:;" data-block=".works" class="nav-bar__link">ГАЛЕРЕЯ</a><a href="javascript:;" data-block=".contact" class="nav-bar__link">КОНТАКТЫ</a></nav>
           </div>
           <div class="top-line__col">
             <div class="call"><a href="tel:+74951234534" class="call__link">+7 (495) 123-45-34</a>
-              <p class="call__work">Время работы: пн — вс, с 9:00 до 19:00</p><a href="#" class="button button_no_bg call__button">Заказать звонок</a>
+              <p class="call__work">Время работы: пн — вс, с 9:00 до 19:00</p><a href="#" data-block=".contact" class="button button_no_bg call__button open-popup">Заказать звонок</a>
             </div>
           </div>
         </div>
@@ -55,7 +67,7 @@
         </div>
         <!-- END ADVANTAGES-->
         <p class="description">Такого еще не было, но мы решили это сделать для вас </p>
-        <div class="header__button"><a href="#" class="button button_blue">Заказать консультацию</a></div>
+        <div class="header__button"><a href="#" class="button button_blue open-popup">Заказать консультацию</a></div>
       </div>
     </div>
     <!-- END HEADER -->
@@ -328,7 +340,7 @@
           </form>
           <div class="hr"></div>
           <div class="call-consult">
-            <p class="call-consult__text">Или позвоните по телефону</p><a href="tel:84959841696" class="call-consult__link">8 (495) 984-16-96</a><a href="#" class="button button_no_bg call-consult__button">Заказать звонок</a>
+            <p class="call-consult__text">Или позвоните по телефону</p><a href="tel:84959841696" class="call-consult__link">8 (495) 984-16-96</a><a href="#" class="button button_no_bg call-consult__button open-popup">Заказать звонок</a>
           </div>
         </div>
       </div>
@@ -343,29 +355,29 @@
             <div class="works-side__l">
               <h3 class="works-side__title">Проекты</h3>
               <ul class="works-list">
-                <li class="works-list__item">Калужская область д. Иваново</li>
-                <li class="works-list__item">Москва ЖК Символ</li>
-                <li class="works-list__item">Москва Староконюшенный</li>
-                <li class="works-list__item">Москва ТЦ Тульский</li>
-                <li class="works-list__item">МО КП Резиденции Беннилюкс</li>
-                <li class="works-list__item">МО КП Миллениум Парк</li>
-                <li class="works-list__item">МО КП Полесье</li>
-                <li class="works-list__item">Ярославская обл. СНТ Лесное</li>
-                <li class="works-list__item">Тульская обл. д. Богучарово</li>
+                <li data-slider='0' class="works-list__item">Калужская область д. Иваново</li>
+                <li data-slider='1' class="works-list__item">Москва ЖК Символ</li>
+                <li data-slider='2' class="works-list__item">Москва Староконюшенный</li>
+                <li data-slider='3' class="works-list__item">Москва ТЦ Тульский</li>
+                <li data-slider='4' class="works-list__item">МО КП Резиденции Беннилюкс</li>
+                <li data-slider='5' class="works-list__item">МО КП Миллениум Парк</li>
+                <li data-slider='6' class="works-list__item">МО КП Полесье</li>
+                <li data-slider='7' class="works-list__item">Ярославская обл. СНТ Лесное</li>
+                <li data-slider='8' class="works-list__item">Тульская обл. д. Богучарово</li>
               </ul>
             </div>
             <div class="works-side__r">
               <h3 class="works-side__title">Реализация</h3>
               <ul class="works-list">
-                <li class="works-list__item">Калужская область д. Иваново</li>
-                <li class="works-list__item">Москва ЖК Символ</li>
-                <li class="works-list__item">Москва Староконюшенный</li>
-                <li class="works-list__item">Москва ТЦ Тульский</li>
-                <li class="works-list__item">МО КП Резиденции Беннилюкс</li>
-                <li class="works-list__item">МО КП Миллениум Парк</li>
-                <li class="works-list__item">МО КП Полесье</li>
-                <li class="works-list__item">Ярославская обл. СНТ Лесное</li>
-                <li class="works-list__item">Тульская обл. д. Богучарово</li>
+                <li data-slider='0' class="works-list__item">Калужская область д. Иваново</li>
+                <li data-slider='1' class="works-list__item">Москва ЖК Символ</li>
+                <li data-slider='2' class="works-list__item">Москва Староконюшенный</li>
+                <li data-slider='3' class="works-list__item">Москва ТЦ Тульский</li>
+                <li data-slider='4' class="works-list__item">МО КП Резиденции Беннилюкс</li>
+                <li data-slider='5' class="works-list__item">МО КП Миллениум Парк</li>
+                <li data-slider='6' class="works-list__item">МО КП Полесье</li>
+                <li data-slider='7' class="works-list__item">Ярославская обл. СНТ Лесное</li>
+                <li data-slider='8' class="works-list__item">Тульская обл. д. Богучарово</li>
               </ul>
             </div>
           </div>
@@ -386,6 +398,89 @@
             </div>
           </form>
           <p class="works-form__text">или получите бесплатную консультацию позвонив по нашему телефону ниже. Наши специалисты работают каждый день с 9.00-21.00 . Мы оперативно подберем для вашего объекта лучший вариант. 8 (495) 984-16-96</p>
+        </div>
+      </div>
+      <div class="works-sliders"><i class="icon icon_close works-sliders__icon"></i>
+        <div class="slider-work">
+          <div class="container">
+            <h2 class="slider-work__title">Калужская область д. Иваново</h2>
+            <p class="slider-work__time">выполнение 2014-2015 год</p>
+            <div class="nav__carousel-work_prev"><i class="icon icon_wb-left"></i></div>
+            <div class="carousel-work"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"></div>
+            <div class="nav__carousel-work_next"><i class="icon icon_wb-right"></i></div>
+          </div>
+        </div>
+        <div class="slider-work">
+          <div class="container">
+            <h2 class="slider-work__title">Москва ЖК Символ</h2>
+            <p class="slider-work__time">выполнение 2014-2015 год</p>
+            <div class="nav__carousel-work_prev"><i class="icon icon_wb-left"></i></div>
+            <div class="carousel-work"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"></div>
+            <div class="nav__carousel-work_next"><i class="icon icon_wb-right"></i></div>
+          </div>
+        </div>
+        <div class="slider-work">
+          <div class="container">
+            <h2 class="slider-work__title">Москва Староконюшенный</h2>
+            <p class="slider-work__time">выполнение 2014-2015 год</p>
+            <div class="nav__carousel-work_prev"><i class="icon icon_wb-left"></i></div>
+            <div class="carousel-work"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"></div>
+            <div class="nav__carousel-work_next"><i class="icon icon_wb-right"></i></div>
+          </div>
+        </div>
+        <div class="slider-work">
+          <div class="container">
+            <h2 class="slider-work__title">Москва ТЦ Тульский</h2>
+            <p class="slider-work__time">выполнение 2014-2015 год</p>
+            <div class="nav__carousel-work_prev"><i class="icon icon_wb-left"></i></div>
+            <div class="carousel-work"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"></div>
+            <div class="nav__carousel-work_next"><i class="icon icon_wb-right"></i></div>
+          </div>
+        </div>
+        <div class="slider-work">
+          <div class="container">
+            <h2 class="slider-work__title">МО КП Резиденции Беннилюкс</h2>
+            <p class="slider-work__time">выполнение 2014-2015 год</p>
+            <div class="nav__carousel-work_prev"><i class="icon icon_wb-left"></i></div>
+            <div class="carousel-work"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"></div>
+            <div class="nav__carousel-work_next"><i class="icon icon_wb-right"></i></div>
+          </div>
+        </div>
+        <div class="slider-work">
+          <div class="container">
+            <h2 class="slider-work__title">МО КП Миллениум Парк</h2>
+            <p class="slider-work__time">выполнение 2014-2015 год</p>
+            <div class="nav__carousel-work_prev"><i class="icon icon_wb-left"></i></div>
+            <div class="carousel-work"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"></div>
+            <div class="nav__carousel-work_next"><i class="icon icon_wb-right"></i></div>
+          </div>
+        </div>
+        <div class="slider-work">
+          <div class="container">
+            <h2 class="slider-work__title">МО КП Полесье</h2>
+            <p class="slider-work__time">выполнение 2014-2015 год</p>
+            <div class="nav__carousel-work_prev"><i class="icon icon_wb-left"></i></div>
+            <div class="carousel-work"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"></div>
+            <div class="nav__carousel-work_next"><i class="icon icon_wb-right"></i></div>
+          </div>
+        </div>
+        <div class="slider-work">
+          <div class="container">
+            <h2 class="slider-work__title">Ярославская обл. СНТ Лесное</h2>
+            <p class="slider-work__time">выполнение 2014-2015 год</p>
+            <div class="nav__carousel-work_prev"><i class="icon icon_wb-left"></i></div>
+            <div class="carousel-work"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"></div>
+            <div class="nav__carousel-work_next"><i class="icon icon_wb-right"></i></div>
+          </div>
+        </div>
+        <div class="slider-work">
+          <div class="container">
+            <h2 class="slider-work__title">Тульская обл. д. Богучарово</h2>
+            <p class="slider-work__time">выполнение 2014-2015 год</p>
+            <div class="nav__carousel-work_prev"><i class="icon icon_wb-left"></i></div>
+            <div class="carousel-work"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"><img src="http://placehold.it/900x600" alt="" class="carousel-work__img"></div>
+            <div class="nav__carousel-work_next"><i class="icon icon_wb-right"></i></div>
+          </div>
         </div>
       </div>
     </div>
@@ -485,7 +580,7 @@
             <div id="roundmap" class="round-map"></div>
             <p class="contact__subtitle">Наш офис:</p>
             <p class="contact__addr">ул. Бауманская, д. 11, оф. 4</p><a href="tel:+74951234534" class="contact__phone-link">+7 (495) 123-45-34</a>
-            <p class="button-container"><a href="#" class="button button_blue contact__button">Заказать звонок</a></p>
+            <p class="button-container"><a href="#" class="button button_blue contact__button open-popup">Заказать звонок</a></p>
           </div>
           <div class="contact__side contact__side_r">
             <div class="question">
@@ -516,6 +611,20 @@
     <!-- END CONTACT-->
     
     <div class="hidden">
+      <div class="popup">
+        <form action="/" class="form-popup">
+          <p class="form-popup__text">Заполните форму, и наш менеджер свяжится с Вами</p>
+          <div class="form-popup__line">
+            <input type="text" placeholder="Ваше имя" class="input form-popup__input">
+          </div>
+          <div class="form-popup__line">
+            <input type="text" placeholder="Ваш телефон" class="input form-popup__input data-inputmask">
+          </div>
+          <div class="form-popup__line">
+            <button type="submit" class="button button_pink form-popup__button">Заказать звонок</button>
+          </div>
+        </form>
+      </div>
     </div><!--[if lt IE 9]>
     <script src="libs/html5shiv/es5-shim.min.js"></script>
     <script src="libs/html5shiv/html5shiv.min.js"></script>

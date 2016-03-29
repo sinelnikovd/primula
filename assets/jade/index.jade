@@ -10,24 +10,40 @@ block content
 			// BEGIN TOP-LINE 
 			.top-line
 				.top-line__col
-					.hamburger
-						span.hamburger__line
-						span.hamburger__line
-						span.hamburger__line
+					.hamberger-wrapper
+						.hamburger
+							span.hamburger__line.hamburger__line_1
+							span.hamburger__line.hamburger__line_2
+							span.hamburger__line.hamburger__line_3
+				.main-menu
+					ul.main-menu__list
+						li.main-menu__item
+							a(href="javascript:;" data-block=".three-sets").main-menu__link Наш подход
+						li.main-menu__item
+							a(href="javascript:;" data-block=".price-minimal").main-menu__link Услуги и стоимость
+						li.main-menu__item
+							a(href="javascript:;" data-block=".works").main-menu__link Выполеннные работы
+						li.main-menu__item
+							a(href="javascript:;" data-block=".recall").main-menu__link Отзывы
+						li.main-menu__item
+							a(href="javascript:;" data-block=".map-work").main-menu__link Наши работы на карте
+						li.main-menu__item
+							a(href="javascript:;" data-block=".contact").main-menu__link Контакты
+
 				.top-line__col
 					.logo
 						a(href="/").logo__link
 							i.icon.icon_logo
 					p.logo-description ландшафтный дизайн в Москве и Московской области
 					nav.nav-bar
-						a(href="#").nav-bar__link УСЛУГИ
-						a(href="#").nav-bar__link ГАЛЕРЕЯ
-						a(href="#").nav-bar__link КОНТАКТЫ
+						a(href="javascript:;" data-block=".price-minimal").nav-bar__link УСЛУГИ
+						a(href="javascript:;" data-block=".works").nav-bar__link ГАЛЕРЕЯ
+						a(href="javascript:;" data-block=".contact").nav-bar__link КОНТАКТЫ
 				.top-line__col
 					.call
 						a(href="tel:+74951234534").call__link +7 (495) 123-45-34
 						p.call__work Время работы: пн — вс, с 9:00 до 19:00
-						a(href="#").button.button_no_bg.call__button Заказать звонок
+						a(href="#" data-block=".contact").button.button_no_bg.call__button.open-popup Заказать звонок
 			// END TOP-LINE 
 			// BEGIN TITLE
 			.title
@@ -48,7 +64,7 @@ block content
 			// END ADVANTAGES
 			p.description Такого еще не было, но мы решили это сделать для вас 
 			.header__button
-				a(href="#").button.button_blue Заказать консультацию
+				a(href="#").button.button_blue.open-popup Заказать консультацию
 
 	// END HEADER 
 
@@ -328,7 +344,7 @@ block content
 				.call-consult
 					p.call-consult__text Или позвоните по телефону
 					a(href="tel:84959841696").call-consult__link 8 (495) 984-16-96
-					a(href="#").button.button_no_bg.call-consult__button Заказать звонок
+					a(href="#").button.button_no_bg.call-consult__button.open-popup Заказать звонок
 	// END DEMOCRACY 
 
 	// BEGIN WORKS 
@@ -340,27 +356,27 @@ block content
 					.works-side__l
 						h3.works-side__title Проекты
 						ul.works-list
-							li.works-list__item Калужская область д. Иваново
-							li.works-list__item Москва ЖК Символ
-							li.works-list__item Москва Староконюшенный
-							li.works-list__item Москва ТЦ Тульский
-							li.works-list__item МО КП Резиденции Беннилюкс
-							li.works-list__item МО КП Миллениум Парк
-							li.works-list__item МО КП Полесье
-							li.works-list__item Ярославская обл. СНТ Лесное
-							li.works-list__item Тульская обл. д. Богучарово
+							li(data-slider=0).works-list__item Калужская область д. Иваново
+							li(data-slider=1).works-list__item Москва ЖК Символ
+							li(data-slider=2).works-list__item Москва Староконюшенный
+							li(data-slider=3).works-list__item Москва ТЦ Тульский
+							li(data-slider=4).works-list__item МО КП Резиденции Беннилюкс
+							li(data-slider=5).works-list__item МО КП Миллениум Парк
+							li(data-slider=6).works-list__item МО КП Полесье
+							li(data-slider=7).works-list__item Ярославская обл. СНТ Лесное
+							li(data-slider=8).works-list__item Тульская обл. д. Богучарово
 					.works-side__r
 						h3.works-side__title Реализация
 						ul.works-list
-							li.works-list__item Калужская область д. Иваново
-							li.works-list__item Москва ЖК Символ
-							li.works-list__item Москва Староконюшенный
-							li.works-list__item Москва ТЦ Тульский
-							li.works-list__item МО КП Резиденции Беннилюкс
-							li.works-list__item МО КП Миллениум Парк
-							li.works-list__item МО КП Полесье
-							li.works-list__item Ярославская обл. СНТ Лесное
-							li.works-list__item Тульская обл. д. Богучарово
+							li(data-slider=0).works-list__item Калужская область д. Иваново
+							li(data-slider=1).works-list__item Москва ЖК Символ
+							li(data-slider=2).works-list__item Москва Староконюшенный
+							li(data-slider=3).works-list__item Москва ТЦ Тульский
+							li(data-slider=4).works-list__item МО КП Резиденции Беннилюкс
+							li(data-slider=5).works-list__item МО КП Миллениум Парк
+							li(data-slider=6).works-list__item МО КП Полесье
+							li(data-slider=7).works-list__item Ярославская обл. СНТ Лесное
+							li(data-slider=8).works-list__item Тульская обл. д. Богучарово
 		.works-form
 			.container
 				h2.works-form__title СКАЧАЙТЕ НАШ ПРАЙС ЛИСТ
@@ -373,7 +389,134 @@ block content
 						button(type="submit").button.button_pink.works-form__button Скачать
 				p.works-form__text или получите бесплатную консультацию позвонив по нашему телефону ниже. Наши специалисты работают каждый день с 9.00-21.00 . Мы оперативно подберем для вашего объекта лучший вариант. 8 (495) 984-16-96
 
-
+		.works-sliders
+			i.icon.icon_close.works-sliders__icon
+			.slider-work
+				.container
+					h2.slider-work__title Калужская область д. Иваново
+					p.slider-work__time выполнение 2014-2015 год
+					.nav__carousel-work_prev
+						i.icon.icon_wb-left
+					.carousel-work
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+					.nav__carousel-work_next
+						i.icon.icon_wb-right
+			.slider-work
+				.container
+					h2.slider-work__title Москва ЖК Символ
+					p.slider-work__time выполнение 2014-2015 год
+					.nav__carousel-work_prev
+						i.icon.icon_wb-left
+					.carousel-work
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+					.nav__carousel-work_next
+						i.icon.icon_wb-right
+			.slider-work
+				.container
+					h2.slider-work__title Москва Староконюшенный
+					p.slider-work__time выполнение 2014-2015 год
+					.nav__carousel-work_prev
+						i.icon.icon_wb-left
+					.carousel-work
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+					.nav__carousel-work_next
+						i.icon.icon_wb-right
+			.slider-work
+				.container
+					h2.slider-work__title Москва ТЦ Тульский
+					p.slider-work__time выполнение 2014-2015 год
+					.nav__carousel-work_prev
+						i.icon.icon_wb-left
+					.carousel-work
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+					.nav__carousel-work_next
+						i.icon.icon_wb-right
+			.slider-work
+				.container
+					h2.slider-work__title МО КП Резиденции Беннилюкс
+					p.slider-work__time выполнение 2014-2015 год
+					.nav__carousel-work_prev
+						i.icon.icon_wb-left
+					.carousel-work
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+					.nav__carousel-work_next
+						i.icon.icon_wb-right
+			.slider-work
+				.container
+					h2.slider-work__title МО КП Миллениум Парк
+					p.slider-work__time выполнение 2014-2015 год
+					.nav__carousel-work_prev
+						i.icon.icon_wb-left
+					.carousel-work
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+					.nav__carousel-work_next
+						i.icon.icon_wb-right
+			.slider-work
+				.container
+					h2.slider-work__title МО КП Полесье
+					p.slider-work__time выполнение 2014-2015 год
+					.nav__carousel-work_prev
+						i.icon.icon_wb-left
+					.carousel-work
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+					.nav__carousel-work_next
+						i.icon.icon_wb-right
+			.slider-work
+				.container
+					h2.slider-work__title Ярославская обл. СНТ Лесное
+					p.slider-work__time выполнение 2014-2015 год
+					.nav__carousel-work_prev
+						i.icon.icon_wb-left
+					.carousel-work
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+					.nav__carousel-work_next
+						i.icon.icon_wb-right
+			.slider-work
+				.container
+					h2.slider-work__title Тульская обл. д. Богучарово
+					p.slider-work__time выполнение 2014-2015 год
+					.nav__carousel-work_prev
+						i.icon.icon_wb-left
+					.carousel-work
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+						img(src="http://placehold.it/900x600", alt="").carousel-work__img
+					.nav__carousel-work_next
+						i.icon.icon_wb-right
 
 	// END WORKS 
 
@@ -472,7 +615,7 @@ block content
 					p.contact__addr ул. Бауманская, д. 11, оф. 4
 					a(href="tel:+74951234534").contact__phone-link +7 (495) 123-45-34
 					p.button-container
-						a(href="#").button.button_blue.contact__button Заказать звонок
+						a(href="#").button.button_blue.contact__button.open-popup Заказать звонок
 				.contact__side.contact__side_r
 					.question
 						h2.question__title Остались вопросы?
@@ -490,5 +633,17 @@ block content
 								button(type="submit").button.button_pink.question__button Задать вопрос
 
 	// END CONTACT
+
+
+block popup
+	.popup
+		form(action="/").form-popup
+			p.form-popup__text Заполните форму, и наш менеджер свяжится с Вами
+			.form-popup__line
+				input(type="text" placeholder="Ваше имя").input.form-popup__input
+			.form-popup__line
+				input(type="text" placeholder="Ваш телефон").input.form-popup__input.data-inputmask
+			.form-popup__line
+				button(type="submit").button.button_pink.form-popup__button Заказать звонок
 
 
